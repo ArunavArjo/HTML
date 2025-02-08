@@ -12,8 +12,28 @@
         }
         .sticky{
             position: sticky;
-            top: 0;
+            bottom: 1px;
+            left: 90px;
+            width: 50px;
+            background-color: rgb(48, 170, 170);
+        }
+        .absolute{
+            position: absolute;
+            left: 50px;
+            border: 3px solid red;
+            background-color: rgb(46, 12, 124);
+        }
+        .relative{
+            position: relative;
+            left: 5px;
             background-color: aqua;
+        }
+        .fixed{
+position: fixed;
+top: 0px;
+width: 50px;
+background-color: brown;
+border: 3px solid tan;
         }
         
         
@@ -28,7 +48,7 @@
  <div class="container"><div class="static">static</div>
  <div class="absolute"> absolute </div>
 <div class="relative">relative</div></div>
-
+<div class="fixed">fixed</div>
 
 </body>
 </html>
