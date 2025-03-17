@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        var fruit = ["mango", "banan", "watermelon", "apple"]
+        var text = "";
+        for (var i = 0; i < fruit.length; i++) {
+            text = `${text} ${i + 1} ${fruit[i]} <br>`
+        }
+        document.getElementById("demo").innerHTML = text;
+          document.write(fruits.join(", ") + "<br>");
+
+            fruits.pop();
+            document.write(fruits + "<br>");
+
+            fruits.push("Jackfruit")
+            document.write(fruits + "<br>");
+
+            fruits.unshift("Watermelon")
+            document.write(fruits + "<br>");
+
+            fruits.shift();
+            document.write(fruits + "<br>");
+
+            fruits.splice(2, 0, "Pinapple", "Lemon");
+            document.write(fruits + "<br>");
+
+            fruits.splice(2, 3);
+            document.write(fruits + "<br>");
+
+            var slicedFruits = fruits.slice(1, 3);
+            document.write(slicedFruits + "<br>");
+
+
+
+    </script>
+</body>
+
+</html>
