@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+CTYPE html>
 <html lang="en">
 
 <head>
@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<p>Click the button</p>
 
 <body>
-
-    <button onclick="myFUCTION()">
-        try it
-    </button>
-    <p id="hours"></p>
+    <p>Click the button</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="hour"></p>
     <p id="greetings"></p>
 
+
     <script>
-        function myFUCTION() {
-            let greetings
+        function myFunction() {
+            let greetings;
             const hour = new Date().getHours();
             const minutes = new Date().getMinutes();
-            document.getElementById('hour').innerHTML = `${hour}: ${minutes}`;
+            document.getElementById('hour').innerHTML = `${hour} : ${minutes}`;
+
             if (hour < 10) {
-                greetings = "Good Morning"
+                greetings = "Good morning";
+            } else if (hour < 20) {
+                greetings = "Good day"
+            } else {
+                greetings = "Good evening"
             }
-         else if (hour < 20) { greetings = "Good Day" }
-        
+            document.getElementById('greetings').innerHTML = greetings;
         }
-
-
     </script>
 </body>
 

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
+
 <body>
-    <p>Multipy every element in array 10:</p>
-    <p id="Value_products"></p>
+    <p>Multiply every element in the array with 10:</p>
+    <p id="product_value"></p>
     <p id="even"></p>
     <script>
-var numbers=[28,19,95,6]
-function myFunction (num){
-    return num *10
-}
-function even(num){
-    return num %2===0;
-}
-var  newwarry = numbers.map =(myFunction)
-document.getElementById("Value_products")inner.num
-var evenNumbers = numbers.filter =(even)
-document.getElementById("even")
+        var numbers = [28, 6, 19, 95];
+
+        function myFunction(num) {
+            return num * 10;
+        }
+
+        function even(num) {
+            return num % 2 === 0;
+        }
+
+        var newarray = numbers.map(myFunction);
+        document.getElementById("product_value").innerHTML = newarray;
+
+        var evenNumbers = numbers.filter(even);
+        document.getElementById("even").innerHTML = evenNumbers
     </script>
 </body>
+
 </html>
