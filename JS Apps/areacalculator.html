@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const choice = prompt("Welcome to area calculator .\nPlease enter your choice .\n1Retangel .\n2Triangle .\n3Curcle .\n4Parellalogram")
+        if (choice == 1) {
+            const lenth = prompt("enter the lenth:")
+            const breadth = prompt("enter the breadth:")
+            const area = lenth * breadth
+            alert(" The area is:" + area)
+        }
+       else if (choice == 2) {
+            const height = prompt("enter the height:")
+            const base = prompt("enter the base:")
+            const area = 0.5 * height * base
+            alert(" The area is:" + area)
+        }
+       else if (choice == 3) {
+            const r = prompt("enter the radius:")
+            const area = 3.1416 * (r * r);
+            alert(" The area is:" + area)
+
+        }
+        else if (choice == 4) {
+            const height = prompt("enter the height:")
+            const base = prompt("enter the base:")
+            const area = 0.5 * height * base
+            alert(" The area is:" + area)
+        }
+        else{
+            alert("please enter numbers only!")
+        }
+
+    </script>
+</body>
+
+</html>
