@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Button Color</title>
+    <style>
+        .my-button {
+            background-color: #4CAF50;
+            /* Default button color */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="colorButton" class="my-button">Change Color</button>
+
+    <script>
+        const button = document.getElementById('colorButton');
+        const colors = ['#4CAF50', 'red', 'blue', 'green']; // Array of colors
+        let colorIndex = 0;
+
+        button.addEventListener('click', function () {
+            button.style.backgroundColor = colors[colorIndex]; // Change button background color
+            colorIndex = (colorIndex + 1) % colors.length; // Cycle through colors
+        });
+    </script>
+
+</body>
+
+</html>
