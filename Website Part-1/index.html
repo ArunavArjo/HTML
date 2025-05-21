@@ -21,17 +21,18 @@
         nav {
             background-color: rgba(44, 62, 80, 0.9);
             padding: 1.5rem 2rem;
+            /* position: fixed; */
             width: 100%;
             top: 0;
             z-index: 100;
         }
 
         .nav-container {
-            max-width: 1200;
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            align-content: center;
+            align-items: center;
         }
 
         nav ul {
@@ -40,7 +41,6 @@
             list-style: none;
             justify-content: space-between;
             gap: 10px;
-
         }
 
         .logo {
@@ -53,15 +53,14 @@
         nav ul li a {
             color: white;
             font-size: 20px;
-            font-weight: 500;
             text-decoration: none;
-            padding: 0.1rem;
+            font-weight: 500;
+            padding: 0.5rem;
         }
 
         nav ul li a:hover {
             background-color: #2c2d2f;
             border-radius: 10px;
-
         }
 
         #home {
@@ -72,17 +71,90 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            color: aliceblue;
+            color: white;
         }
-        .hero-content{
+
+        .hero-content {
             max-width: 800px;
-            animation: fadeIn 1.5 ease-in-out;
+            animation: fadeIn 1.5s ease-in-out;
         }
-        .hero-content h1{
+
+        .hero-content h1 {
             font-size: 3.5rem;
             margin-bottom: 1.5rem;
         }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: all 0.3 seconds;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+            box-shadow: 0px, 8px, 20px rgba(52, 152, 219, 0.4);
+        }
+
+        /* About section */
+        #about {
+            padding: 6rem 2rem;
+            background-color: #f9f9f9;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: transfrom 0.5s;
+        }
+        .about-img:hover{
+            transform: scale(1.05);
+        }
+        .about-img img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .about-content p{
+            margin-bottom: 20px;
+        }
     </style>
+
 </head>
 
 <body>
@@ -107,6 +179,23 @@
                 <a href="#about" class="btn btn-outline">Learn more</a>
             </div>
         </div>
+    </section>
+    <section id="About">
+        <div class="section-container">
+            <div class="about-content fade in">
+                <h2>About our company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, dolore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod ipsum possimus totam eveniet eaque.
+                </p>
+                <a href="" class="btn">Our services</a>
+
+            </div>
+            <div class="about-img fade in">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="">
+            </div>
+        </div>
+
     </section>
 </body>
 
